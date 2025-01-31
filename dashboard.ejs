@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Welcome to Your Dashboard</h1>
+    <% courses.forEach(course => { %>
+        <div class="course">
+            <h2><%= course.title %></h2>
+            <p><%= course.description %></p>
+            <a href="/course/<%= course.id %>">View Course</a>
+        </div>
+    <% }) %>
+</body>
+</html>
